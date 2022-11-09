@@ -1,2 +1,1 @@
-# Hello,
-Voici mon README
+# Hello, Voici mon README
