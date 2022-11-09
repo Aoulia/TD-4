@@ -1,5 +1,7 @@
-FROM alpine 3.15.0
 
-CMD ping localhost
-
-CMD stdout ”hello-alpine, je suis <olaya> et ça c'est ma première image”
+FROM alpine:3.15.0
+LABEL version="1.0.0" maintainer="Kousseila OUAGUENI" os="ubuntu"
+ENV CONTAINER_USER "kousseila"
+RUN adduser -S -D $CONTAINER_USER
+USER $CONTAINER_USER
+CMD echo  ”hello-alpine, je suis <olaya> et ça c'est ma première image”
